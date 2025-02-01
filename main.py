@@ -1,4 +1,4 @@
-import gdown
+#import gdown
 import asyncio
 import logging
 
@@ -15,14 +15,14 @@ logging.basicConfig(
 )
 
 
-url_discra = "https://drive.google.com/uc?id=1oLcVEUAD2H8H91BqEaUhKCbYMh7Pbj_u"
-url_discrb = "https://drive.google.com/uc?id=1uZiTtihMgZq7ZUlO4w6tp4vPAdOo9MgS"
-url_genab = "https://drive.google.com/uc?id=1skcw9Q_zptM5KvRBoaCBYxqaWNL5F2-G"
-url_genba = "https://drive.google.com/uc?id=1oIWPp_Y9I0zWWpc19dhzrwrXmLobYpkf"
-gdown.download(url_discra)
-gdown.download(url_discrb)
-gdown.download(url_genab)
-gdown.download(url_genba)
+# url_discra = "https://drive.google.com/uc?id=1oLcVEUAD2H8H91BqEaUhKCbYMh7Pbj_u"
+# url_discrb = "https://drive.google.com/uc?id=1uZiTtihMgZq7ZUlO4w6tp4vPAdOo9MgS"
+# url_genab = "https://drive.google.com/uc?id=1skcw9Q_zptM5KvRBoaCBYxqaWNL5F2-G"
+# url_genba = "https://drive.google.com/uc?id=1oIWPp_Y9I0zWWpc19dhzrwrXmLobYpkf"
+# gdown.download(url_discra)
+# gdown.download(url_discrb)
+# gdown.download(url_genab)
+# gdown.download(url_genba)
 
 # Инициализируем логгер модуля
 logger = logging.getLogger(__name__)
