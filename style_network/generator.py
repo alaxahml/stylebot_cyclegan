@@ -2,9 +2,13 @@ import torch.nn as nn
 
 
 class ConvBlock(nn.Module):
+  """
+  Блок (свертка-нормализация-активация). Когда генератор восстанавливает размер изображения обратно, то свертка транспонированная.
+  В случае использования ConvBlock в ResBlock,
+  активацию в оригинальной статье используют не всегда, поэтому есть возможность активацию не использовать в этом классе
+  """
   def __init__(self, in_channels, out_channels, down=True, use_act=True, **kwargs):
     super().__init__()
-
     self.block = nn.Sequential(
         nn.Conv2d(in_channels, out_channels, **kwargs)
         if down
@@ -21,6 +25,10 @@ class ConvBlock(nn.Module):
 
 
 class ResBlock(nn.Module):
+  """
+  Блок с residual connection из имплементации оригинальной статьи по cyclegan. Состоит из двух сверточных блоков ConvBlock.
+  В последнем не используется функция активации. Размеры скрытых слоёв при их использовании не меняются
+  """
   def __init__(self, in_channels):
     super().__init__()
 
@@ -34,6 +42,10 @@ class ResBlock(nn.Module):
     return x
 
 class Generator(nn.Module):
+  """
+  Основной класс генератора, состоит из свёртки изображения, работы со скрытым представлением с помощью ResBlock'ов,
+  а также развёртки изображения в исходное представление
+  """
   def __init__(self, img_channels=3, num_features=64):
     super().__init__()
 
