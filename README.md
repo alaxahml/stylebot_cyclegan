@@ -7,6 +7,8 @@
 
 -ТГ автора: @hmlalaxa
 
+-Ноутбук с обучение CycleGAN: https://colab.research.google.com/drive/1Pmi5sE2ZDeF0L5Lzm301GXMJCPm3F1NT?usp=sharing
+
 
 
 
