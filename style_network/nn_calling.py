@@ -61,14 +61,14 @@ def main_calling():
 
     logger.debug("network created")
     load_checkpoint(
-        "genab17.pth.tar",
+        "genab.pth.tar",
         gen_AB,
         opt_gen,
         0.00001,
         device
     )
     load_checkpoint(
-        "genba17.pth.tar",
+        "genba.pth.tar",
         gen_BA,
         opt_gen,
         0.00001,
