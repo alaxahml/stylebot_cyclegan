@@ -1,4 +1,4 @@
-# Телеграм-бот, стилизующий фотографии под японский стиль ukiyo-e с использованием CycleGAN
+# Телеграм-бот, стилизующий фотографии под стиль картин Моне с использованием CycleGAN
 -ТГ бот:  @alaxahml_bot
 
 -Автор: Черкасов Алексей
@@ -7,7 +7,7 @@
 
 -ТГ автора: @hmlalaxa
 
--Ноутбук с обучение CycleGAN: https://colab.research.google.com/drive/1Pmi5sE2ZDeF0L5Lzm301GXMJCPm3F1NT?usp=sharing
+
 
 
 
